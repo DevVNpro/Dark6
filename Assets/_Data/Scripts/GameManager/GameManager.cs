@@ -10,12 +10,17 @@ public class GameManager : RootMonoBehaviour
   
     public int level = 1;
     public static event Action PlayerDied;
+    public static event Action BossDied;
 
-    // Hàm này được gọi khi Player chết
     public void PlayerDeath()
     {
         if (PlayerDied != null)
             PlayerDied.Invoke();
+    }
+    public void BossDeath()
+    {
+        if (BossDied != null)
+            BossDied.Invoke();
     }
     protected override void Start()
     {

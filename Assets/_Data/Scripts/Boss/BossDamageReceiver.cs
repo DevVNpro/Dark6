@@ -21,6 +21,7 @@ public class BossDamageReceiver : DamageReceiver
     protected virtual void DisableObject()
     {
         gameObject.SetActive(false);
+        GameManager.Instance.BossDeath();
         EnemySpawner.Instance.Despawn(transform);
     }
 }

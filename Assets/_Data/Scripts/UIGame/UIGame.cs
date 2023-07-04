@@ -7,36 +7,25 @@ public class UIGame : MonoBehaviour
 {
     [SerializeField] protected Button setting;
     [SerializeField] protected Canvas canvasSetting;
-    [SerializeField] protected GameObject game;
-    //uiendgame
-    [SerializeField] protected GameObject UIEndGame;
+    [SerializeField] protected GameObject player;
+    [SerializeField] protected GameObject playerClickAttak;
+
+    protected CapsuleCollider2D colliderPlayer;
 
     private void Start()
     {
         setting.onClick.AddListener(OnClickSetting);
+        colliderPlayer=player.GetComponent<CapsuleCollider2D>();
     }
 
     protected virtual void OnClickSetting()
     {
         canvasSetting.gameObject.SetActive(true);
-        game.SetActive(false);
+        colliderPlayer.enabled = false;
+        playerClickAttak.SetActive(false);
     }
-    private void OnEnable()
-    {
-        // Đăng ký lắng nghe sự kiện Player chết
-        GameManager.PlayerDied += ShowEndGameUI;
-    }
-
-    private void OnDisable()
-    {
-        // Hủy đăng ký lắng nghe sự kiện Player chết
-        GameManager.PlayerDied -= ShowEndGameUI;
-    }
-
-    private void ShowEndGameUI()
-    {
-        // Hiển thị UI End Game
-        UIEndGame.SetActive(true);
-    }
+    /// code duoi can chia ra class khac
+    ///     //uiendgame
+   
 
 }

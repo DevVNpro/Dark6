@@ -76,7 +76,6 @@ public class PlayerAnimation : RootMonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-    //    Debug.Log("minus HP");
         playerCtrl.DamageSender.Send(collision.transform);
         SoundManager.Instance.PlayVFXmusic("Attack");
     }

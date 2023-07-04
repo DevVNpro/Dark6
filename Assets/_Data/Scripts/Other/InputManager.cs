@@ -46,6 +46,17 @@ public class InputManager : RootMonoBehaviour
     {
         fire = Input.GetAxisRaw("Fire1");
     }
-    
 
+    private void OnEnable()
+    {
+        GameManager.BossDied += DisableInput;
+    }
+    private void OnDisable()
+    {
+        GameManager.BossDied -= DisableInput;
+    }
+    protected void DisableInput()
+    {
+        gameObject.SetActive(false);
+    }
 }

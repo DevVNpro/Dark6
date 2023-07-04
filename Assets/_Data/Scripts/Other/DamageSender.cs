@@ -4,7 +4,7 @@ using UnityEngine;
 
 public abstract class DamageSender : RootMonoBehaviour
 {
-    [SerializeField] protected int damage = 1;
+    protected int damage;
     protected override void Awake()
     {
         base.Awake();

@@ -8,17 +8,23 @@ public class UISetting : MonoBehaviour
     [SerializeField] protected Button back;
     [SerializeField] protected Button exitGame;
 
-    [SerializeField] protected GameObject game;
+    [SerializeField] protected GameObject player;
+    [SerializeField] protected GameObject playerClickAttak;
+
+    protected CapsuleCollider2D colliderPlayer;
     private void Start()
     {
         back.onClick.AddListener(CloseSetting);
         exitGame.onClick.AddListener(ExitGame);
+        colliderPlayer= player.GetComponent<CapsuleCollider2D>();
+
     }
 
     protected virtual void CloseSetting()
     {
-       transform.gameObject.SetActive(false);
-        game.SetActive(true);
+       gameObject.SetActive(false);
+        colliderPlayer.enabled = true;
+        playerClickAttak.SetActive(true);
     }
     private void ExitGame()
     {
