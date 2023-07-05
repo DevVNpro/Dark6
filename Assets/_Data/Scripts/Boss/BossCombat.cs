@@ -4,13 +4,11 @@ using UnityEngine;
 
 public class BossCombat : RootMonoBehaviour
 {
-   [SerializeField] protected DamageSender damageSender;
+   [SerializeField] protected BossDamageSender damageSender;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("Boss attack player");
         damageSender.Send(collision.transform);
-
     }
     private void OnEnable()
     {

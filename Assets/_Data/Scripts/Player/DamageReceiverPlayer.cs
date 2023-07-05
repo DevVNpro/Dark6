@@ -23,22 +23,22 @@ public class DamageReceiverPlayer : DamageReceiver
             this.deadAnimation = true;
         }        
     }
-
+        
     private void OnEnable()
     {
-        GameManager.PlayerDied += DisableObject;
+        GameManager.PlayerDied += DisablePlayer;
     }
     private void OnDisable()
     {
-        GameManager.PlayerDied -= DisableObject;
+        GameManager.PlayerDied -= DisablePlayer;
     }
 
 
 
-    protected virtual void DisableObject()
+    protected virtual void DisablePlayer()
     {
         gameObject.SetActive(false);
     }
-
+    
 
 }

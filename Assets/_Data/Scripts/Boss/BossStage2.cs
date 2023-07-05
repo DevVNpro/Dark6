@@ -10,7 +10,7 @@ public class BossStage2 : StateMachineBehaviour
     [SerializeField] protected BossDamageReceiver bossDamageReceiver;
     [SerializeField] protected Canvas canvasHeartbar;
     [SerializeField]protected GameObject canvasGameObject;
-    protected float speed = 3f;
+    protected float speed = 4f;
     protected  float attackDistance = 5f;
     protected int randomAttack;
 
