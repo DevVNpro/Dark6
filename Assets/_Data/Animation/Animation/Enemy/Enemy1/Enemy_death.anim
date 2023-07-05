@@ -21,13 +21,13 @@ AnimationClip:
   - curve:
     - time: 0
       value: {fileID: -324435825, guid: 84bd86409e33007488f90eab723fb86b, type: 3}
-    - time: 0.23333333
+    - time: 0.06666667
       value: {fileID: -1044514466, guid: 84bd86409e33007488f90eab723fb86b, type: 3}
-    - time: 0.53333336
+    - time: 0.15
       value: {fileID: -1239704290, guid: 84bd86409e33007488f90eab723fb86b, type: 3}
-    - time: 0.78333336
+    - time: 0.21666667
       value: {fileID: -28501733, guid: 84bd86409e33007488f90eab723fb86b, type: 3}
-    - time: 1.0166667
+    - time: 0.28333333
       value: {fileID: 174073497, guid: 84bd86409e33007488f90eab723fb86b, type: 3}
     attribute: m_Sprite
     path: 
@@ -58,7 +58,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 1.0333333
+    m_StopTime: 0.3
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -78,8 +78,8 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
-  - time: 1.0166667
-    functionName: 
+  - time: 0.28333333
+    functionName: DespawnObject
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0

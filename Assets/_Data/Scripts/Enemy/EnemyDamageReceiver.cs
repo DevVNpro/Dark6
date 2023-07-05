@@ -18,8 +18,9 @@ public class EnemyDamageReceiver : DamageReceiver
     protected override void DestroyObject()
     {
         this.Reborn();
-         EnemySpawner.Instance.Despawn(transform.parent);
+        animator.SetTrigger("IsDeath");
     }
+
 
 
 }
