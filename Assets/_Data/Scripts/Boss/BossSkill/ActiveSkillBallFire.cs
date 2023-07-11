@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ActiveBallFire : MonoBehaviour
+public class ActiveSkillBallFire : MonoBehaviour
 {
     [SerializeField] protected GameObject[] ballFires;
 

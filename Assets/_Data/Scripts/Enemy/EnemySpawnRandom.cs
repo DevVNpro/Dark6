@@ -11,10 +11,10 @@ public class EnemySpawnRandom : RootMonoBehaviour
     protected override void LoadComponents()
     {
         base.LoadComponents();
-        this.LoadJunkCtrl();
+        this.LoadenemyCtrl();
     }
 
-    protected virtual void LoadJunkCtrl()
+    protected virtual void LoadenemyCtrl()
     {
         if (this.enemyCtrl != null) return;
         this.enemyCtrl = GetComponent<EnemyCtrl>();
@@ -28,14 +28,14 @@ public class EnemySpawnRandom : RootMonoBehaviour
     protected virtual void SpawnEnemy()
     {
    
-            this.time += Time.deltaTime;
-            if (this.time < this.timeLimid) return;
-            this.time = 0;
-            Transform prefab = SetSpawnPrefabs(GameManager.Instance.level);
-             if (prefab == null) return;
-            Transform Pos = enemyCtrl.SpawnerPoint.RandPoint();
-            Transform enemy = EnemySpawner.Instance.Spawner(prefab, Pos.position, transform.rotation); ;
-             enemy.gameObject.SetActive(true);
+        this.time += Time.deltaTime;
+        if (this.time < this.timeLimid) return;
+        this.time = 0;
+        Transform prefab = SetSpawnPrefabs(GameManager.Instance.level);
+        if (prefab == null) return;
+        Transform Pos = enemyCtrl.SpawnerPoint.RandPoint();
+        Transform enemy = EnemySpawner.Instance.Spawner(prefab, Pos.position, transform.rotation); ;
+        enemy.gameObject.SetActive(true);
             
     }
     protected virtual Transform SetSpawnPrefabs(int level)

@@ -5,7 +5,7 @@ using UnityEngine;
 public class SpawnerPoint : RootMonoBehaviour
 {
     [SerializeField] protected List<Transform> holders;
-    public List<Transform> Holders => holders;
+   // public List<Transform> Holders => holders;
 
     protected override void LoadComponents()
     {

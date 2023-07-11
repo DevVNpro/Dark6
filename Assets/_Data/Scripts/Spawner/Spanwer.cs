@@ -76,12 +76,7 @@ using UnityEngine;
         Debug.Log(transform.name + "Prefab Null", gameObject);
         return false;
     }
-    public virtual Transform RandomPrefab()
-    {
-        int rand = Random.Range(0, this.prefabs.Count);
-        return this.prefabs[rand];
-    }
-    
+
     public virtual void Despawn(Transform obj)
     {
         this.Pool.Add(obj);

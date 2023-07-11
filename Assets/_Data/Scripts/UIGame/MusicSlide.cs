@@ -6,7 +6,10 @@ using UnityEngine.UI;
 public class MusicSlide : MonoBehaviour
 {
     [SerializeField] protected AudioSource themeMusic;
-    [SerializeField] protected Slider slider;
+    [SerializeField] protected AudioSource vfxMusic;
+    [SerializeField] protected Slider musicSlider;
+    [SerializeField] protected Slider vfxSlider;
+
 
     private void Update()
     {
@@ -14,7 +17,8 @@ public class MusicSlide : MonoBehaviour
     }
     protected virtual void SetVolumeMusic()
     {
-        this.themeMusic.volume = this.slider.value;
+        this.themeMusic.volume = this.musicSlider.value;
+        this.vfxMusic.volume = this.vfxSlider.value;
     }
 
 }
