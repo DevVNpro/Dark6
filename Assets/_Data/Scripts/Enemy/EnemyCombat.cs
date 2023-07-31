@@ -1,0 +1,20 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class EnemyCombat : RootMonoBehaviour
+{
+    [SerializeField] protected EnemyDamageSender enemyDamageSender;
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+        enemyDamageSender.Send(collision.transform);
+         }
+
+
+     }
+
+   
+}
