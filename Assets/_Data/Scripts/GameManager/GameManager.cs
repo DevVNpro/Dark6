@@ -5,7 +5,9 @@ using System;
 
 public class GameManager : RootMonoBehaviour
 {
+
     private static GameManager instance;
+
     public static GameManager Instance => instance;
   
     public int level = 1;

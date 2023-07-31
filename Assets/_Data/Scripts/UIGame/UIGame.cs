@@ -5,7 +5,8 @@ using UnityEngine.UI;
 
 public class UIGame : MonoBehaviour
 {
-    [SerializeField] protected Button button;
+
+    [SerializeField] protected Button setting;
     [SerializeField] protected Canvas canvasSetting;
     [SerializeField] protected GameObject player;
     [SerializeField] protected GameObject playerClickAttak;
@@ -14,7 +15,8 @@ public class UIGame : MonoBehaviour
 
     private void Start()
     {
-        button.onClick.AddListener(OnClickSetting);
+
+        setting.onClick.AddListener(OnClickSetting);
         colliderPlayer=player.GetComponent<CapsuleCollider2D>();
     }
 

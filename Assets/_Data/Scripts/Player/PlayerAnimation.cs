@@ -8,6 +8,7 @@ public class PlayerAnimation : RootMonoBehaviour
     [SerializeField] protected Animator animator;
     [SerializeField] protected SpriteRenderer sprite;
 
+
     protected override void LoadComponents()
     {
         base.LoadComponents();
@@ -72,6 +73,5 @@ public class PlayerAnimation : RootMonoBehaviour
         if (InputManager.Instance.X > 0) sprite.flipX = false;
     }
 
-    
 
 }

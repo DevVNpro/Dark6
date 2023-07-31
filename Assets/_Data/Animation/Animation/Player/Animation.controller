@@ -261,7 +261,11 @@ AnimatorStateMachine:
     m_Position: {x: 280, y: 340, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 3477818106284301957}
+<<<<<<< HEAD
     m_Position: {x: 710, y: 40, z: 0}
+=======
+    m_Position: {x: 710, y: 30, z: 0}
+>>>>>>> 688c9d565885f785f9197a2f9035944e7960f6d8
   m_ChildStateMachines: []
   m_AnyStateTransitions:
   - {fileID: -342577387653771240}
@@ -493,37 +497,61 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
+<<<<<<< HEAD
     m_Controller: {fileID: 9100000}
+=======
+    m_Controller: {fileID: 0}
+>>>>>>> 688c9d565885f785f9197a2f9035944e7960f6d8
   - m_Name: Y
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
+<<<<<<< HEAD
     m_Controller: {fileID: 9100000}
+=======
+    m_Controller: {fileID: 0}
+>>>>>>> 688c9d565885f785f9197a2f9035944e7960f6d8
   - m_Name: IsWalking
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
+<<<<<<< HEAD
     m_Controller: {fileID: 9100000}
+=======
+    m_Controller: {fileID: 0}
+>>>>>>> 688c9d565885f785f9197a2f9035944e7960f6d8
   - m_Name: IsAtack
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
+<<<<<<< HEAD
     m_Controller: {fileID: 9100000}
+=======
+    m_Controller: {fileID: 0}
+>>>>>>> 688c9d565885f785f9197a2f9035944e7960f6d8
   - m_Name: Hit
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
+<<<<<<< HEAD
     m_Controller: {fileID: 9100000}
+=======
+    m_Controller: {fileID: 0}
+>>>>>>> 688c9d565885f785f9197a2f9035944e7960f6d8
   - m_Name: IsDeath
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
+<<<<<<< HEAD
     m_Controller: {fileID: 9100000}
+=======
+    m_Controller: {fileID: 0}
+>>>>>>> 688c9d565885f785f9197a2f9035944e7960f6d8
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
